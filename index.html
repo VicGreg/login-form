@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>logIn form || Greggo</title>
+  <link rel="stylesheet" href="./styl.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <span class="menu-btn material-symbols-rounded">Menu</span>
+      <a href="#" class="logo">
+        <img src="./logo edge.PNG" alt="">
+        <h2>Greggo codes</h2>
+      </a>
+    <ul class="links">
+      <span class="close-btn material-symbols-rounded">close</span>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Porfolio</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+     <button class="login-btn">Log In</button>
+    </nav>
+  </header>
+  <!--pop up form-->
+  <div class="blur-bg-overlay"></div>
+  <div class="form-popup">
+    <span class="close-btn material-symbols-rounded">close</span>
+    <div class="form-box login">
+      <div class="form-details">
+        <h2>Welcome Back</h2>
+        <p>Please log in using your personal nformation to start</p>
+      </div>
+      <div class="form-content">
+        <h2>Login</h2>
+        <form action="">
+          <div class="input-field">
+            <input type="text">
+            <label>Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password">
+            <label>password</label>
+          </div>
+          <a href="#" class="forgot-password">forgot-password</a>
+          <button type="submit">Log In</button>
+        </form>
+        <div class="bottom-link">
+          don't have an account?
+          <a href="#" id="signup-link">Signup</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-box signup">
+      <div class="form-details">
+        <h2>Create Account</h2>
+        <p>Please log in using your personal nformation to start</p>
+      </div>
+      <div class="form-content">
+        <h2>SIGNUP</h2>
+        <form action="">
+          <div class="input-field">
+            <input type="text">
+            <label>Enter your email</label>
+          </div>
+          <div class="input-field">
+            <input type="password">
+            <label>Create password</label>
+          </div>
+          <div class="policy-text">
+            <input type="checkbox" id="policy">
+            <label for="policy">
+              I agree the 
+              <a href="#" class="forgot-password">Terms $ Conditions</a>
+            </label>
+          </div>
+          <button type="submit">sign Up</button>
+        </form>
+        <div class="bottom-link">
+          Already have an account?
+          <a href="#" id="login-link">Login</a>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</body>
+<script src="./func.js"></script>
+</html>
